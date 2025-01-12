@@ -1,0 +1,740 @@
+[
+	{
+		"id": 31593600,
+		"userId": 1904683,
+		"choreId": 4152918,
+		"points": 2,
+		"title": "Kochen",
+		"completedAt": 1734009496,
+		"dueAt": 1734047999
+	},
+	{
+		"id": 31593598,
+		"userId": 1904683,
+		"choreId": 4152063,
+		"points": 1,
+		"title": "Katzenklo",
+		"completedAt": 1734009489,
+		"dueAt": 1734047999
+	},
+	{
+		"id": 31593571,
+		"userId": 1904683,
+		"choreId": 4152075,
+		"points": 2,
+		"title": "Geschirr abwaschen",
+		"completedAt": 1734009371,
+		"dueAt": 1734047999
+	},
+	{
+		"id": 31583543,
+		"userId": 1904683,
+		"choreId": 4152061,
+		"points": 1,
+		"title": "MÜll rausbringen",
+		"completedAt": 1733946821,
+		"dueAt": 1733615998
+	},
+	{
+		"id": 31583519,
+		"userId": 1904683,
+		"choreId": 4152918,
+		"points": 2,
+		"title": "Kochen",
+		"completedAt": 1733946734,
+		"dueAt": 1733961599
+	},
+	{
+		"id": 31583516,
+		"userId": 1904682,
+		"choreId": 4152075,
+		"points": 2,
+		"title": "Geschirr abwaschen",
+		"completedAt": 1733946704,
+		"dueAt": 1733961599
+	},
+	{
+		"id": 31583504,
+		"userId": 1904682,
+		"choreId": 4152755,
+		"points": 2,
+		"title": "BÜgeln",
+		"completedAt": 1733946649,
+		"dueAt": 1733698799
+	},
+	{
+		"id": 31583499,
+		"userId": 1904682,
+		"choreId": 4152062,
+		"points": 1,
+		"title": "Staubsaugen",
+		"completedAt": 1733946635,
+		"dueAt": 1734303599
+	},
+	{
+		"id": 31583492,
+		"userId": 1904682,
+		"choreId": 4152753,
+		"points": 2,
+		"title": "Wäsche zusammenlegen",
+		"completedAt": 1733946616,
+		"dueAt": 1734047999
+	},
+	{
+		"id": 31583483,
+		"userId": 1904682,
+		"choreId": 4152665,
+		"points": 2,
+		"title": "Wohnzimmer aufräumen",
+		"completedAt": 1733946596,
+		"dueAt": 1733698799
+	},
+	{
+		"id": 31556069,
+		"userId": 1904683,
+		"choreId": 4152075,
+		"points": 2,
+		"title": "Geschirr abwaschen",
+		"completedAt": 1733837631,
+		"dueAt": 1733875199
+	},
+	{
+		"id": 31556065,
+		"userId": 1904683,
+		"choreId": 4152918,
+		"points": 2,
+		"title": "Kochen",
+		"completedAt": 1733837613,
+		"dueAt": 1733702399
+	},
+	{
+		"id": 31546618,
+		"userId": 1904683,
+		"choreId": 4152063,
+		"points": 1,
+		"title": "Katzenklo",
+		"completedAt": 1733779718,
+		"dueAt": 1733788799
+	},
+	{
+		"id": 31546606,
+		"userId": 1904683,
+		"choreId": 4152780,
+		"points": 1,
+		"title": "Pflanzen gießen",
+		"completedAt": 1733779682,
+		"dueAt": 1733698799
+	},
+	{
+		"id": 31546600,
+		"userId": 1904683,
+		"choreId": 4152062,
+		"points": 1,
+		"title": "Staubsaugen",
+		"completedAt": 1733779656,
+		"dueAt": 1733698799
+	},
+	{
+		"id": 31546591,
+		"userId": 1904683,
+		"choreId": 4152664,
+		"points": 4,
+		"title": "Bad & WC putzen",
+		"completedAt": 1733779642,
+		"dueAt": 1733698799
+	},
+	{
+		"id": 31535445,
+		"userId": 1904683,
+		"choreId": 4152075,
+		"points": 2,
+		"title": "Geschirr abwaschen",
+		"completedAt": 1733753441,
+		"dueAt": 1733875199
+	},
+	{
+		"id": 31528281,
+		"userId": 1904683,
+		"choreId": 4152687,
+		"points": 1,
+		"title": "Wäsche waschen",
+		"completedAt": 1733733550,
+		"dueAt": 1733615998
+	},
+	{
+		"id": 31525437,
+		"userId": 1904682,
+		"choreId": 4152785,
+		"points": 1,
+		"title": "BÜro aufräumen",
+		"completedAt": 1733704963,
+		"dueAt": 1733698799
+	},
+	{
+		"id": 31525434,
+		"userId": 1904682,
+		"choreId": 4152753,
+		"points": 2,
+		"title": "Wäsche zusammenlegen",
+		"completedAt": 1733704952,
+		"dueAt": 1733788799
+	},
+	{
+		"id": 31525433,
+		"userId": 1904682,
+		"choreId": 4152075,
+		"points": 2,
+		"title": "Geschirr abwaschen",
+		"completedAt": 1733704942,
+		"dueAt": 1733702399
+	},
+	{
+		"id": 31525427,
+		"userId": 1904682,
+		"choreId": 4152071,
+		"points": 2,
+		"title": "KÜche aufräumen",
+		"completedAt": 1733704890,
+		"dueAt": 1733615999
+	},
+	{
+		"id": 31498292,
+		"userId": 1904683,
+		"choreId": 4152061,
+		"points": 1,
+		"title": "MÜll rausbringen",
+		"completedAt": 1733613484,
+		"dueAt": 1733443198
+	},
+	{
+		"id": 31498290,
+		"userId": 1904683,
+		"choreId": 4152687,
+		"points": 1,
+		"title": "Wäsche waschen",
+		"completedAt": 1733613481,
+		"dueAt": 1733529598
+	},
+	{
+		"id": 31489263,
+		"userId": 1904682,
+		"choreId": 4152802,
+		"points": 1,
+		"title": "Schlafzimmer aufräumen, Schmutzwäsche",
+		"completedAt": 1733580388,
+		"dueAt": 1734908399
+	},
+	{
+		"id": 31489252,
+		"userId": 1904682,
+		"choreId": 4152075,
+		"points": 2,
+		"title": "Geschirr abwaschen",
+		"completedAt": 1733580373,
+		"dueAt": 1733702399
+	},
+	{
+		"id": 31489245,
+		"userId": 1904682,
+		"choreId": 4152918,
+		"points": 2,
+		"title": "Kochen",
+		"completedAt": 1733580366,
+		"dueAt": 1733615999
+	},
+	{
+		"id": 31489240,
+		"userId": 1904682,
+		"choreId": 4152814,
+		"points": 1,
+		"title": "KÜche Abwasch, Arbeitsfläche, Geräte putzen",
+		"completedAt": 1733580356,
+		"dueAt": 1733615999
+	},
+	{
+		"id": 31489202,
+		"userId": 1904683,
+		"choreId": 4152075,
+		"points": 2,
+		"title": "Geschirr abwaschen",
+		"completedAt": 1733580277,
+		"dueAt": 1733615999
+	},
+	{
+		"id": 31477214,
+		"userId": 1904683,
+		"choreId": 4152063,
+		"points": 1,
+		"title": "Katzenklo",
+		"completedAt": 1733527151,
+		"dueAt": 1733529599
+	},
+	{
+		"id": 31477206,
+		"userId": 1904683,
+		"choreId": 4152687,
+		"points": 1,
+		"title": "Wäsche waschen",
+		"completedAt": 1733527116,
+		"dueAt": 1733443198
+	},
+	{
+		"id": 31472021,
+		"userId": 1904682,
+		"choreId": 4152075,
+		"points": 2,
+		"title": "Geschirr abwaschen",
+		"completedAt": 1733503690,
+		"dueAt": 1733529599
+	},
+	{
+		"id": 31472019,
+		"userId": 1904683,
+		"choreId": 4152918,
+		"points": 2,
+		"title": "Kochen",
+		"completedAt": 1733503687,
+		"dueAt": 1733443199
+	},
+	{
+		"id": 31471305,
+		"userId": 1904682,
+		"choreId": 4152802,
+		"points": 1,
+		"title": "Schlafzimmer aufräumen, Schmutzwäsche",
+		"completedAt": 1733501776,
+		"dueAt": 1733698799
+	},
+	{
+		"id": 31471302,
+		"userId": 1904682,
+		"choreId": 4152753,
+		"points": 2,
+		"title": "Wäsche zusammenlegen",
+		"completedAt": 1733501761,
+		"dueAt": 1733356799
+	},
+	{
+		"id": 31457660,
+		"userId": 1904683,
+		"choreId": 4152061,
+		"points": 1,
+		"title": "MÜll rausbringen",
+		"completedAt": 1733433739,
+		"dueAt": 1733356798
+	},
+	{
+		"id": 31457655,
+		"userId": 1904683,
+		"choreId": 4152075,
+		"points": 2,
+		"title": "Geschirr abwaschen",
+		"completedAt": 1733433719,
+		"dueAt": 1733443199
+	},
+	{
+		"id": 31450125,
+		"userId": 1904683,
+		"choreId": 4152780,
+		"points": 1,
+		"title": "Pflanzen gießen",
+		"completedAt": 1733411883,
+		"dueAt": 1733439599
+	},
+	{
+		"id": 31450111,
+		"userId": 1904683,
+		"choreId": 4152687,
+		"points": 1,
+		"title": "Wäsche waschen",
+		"completedAt": 1733411867,
+		"dueAt": 1733183998
+	},
+	{
+		"id": 31450089,
+		"userId": 1904683,
+		"choreId": 4152804,
+		"points": 4,
+		"title": "KÜchenkasterln sauber machen",
+		"completedAt": 1733411835,
+		"dueAt": 1734217199
+	},
+	{
+		"id": 31435622,
+		"userId": 1904683,
+		"choreId": 4152071,
+		"points": 2,
+		"title": "KÜche aufräumen",
+		"completedAt": 1733337235,
+		"dueAt": 1733356799
+	},
+	{
+		"id": 31435618,
+		"userId": 1904683,
+		"choreId": 4152075,
+		"points": 2,
+		"title": "Geschirr abwaschen",
+		"completedAt": 1733337228,
+		"dueAt": 1733356799
+	},
+	{
+		"id": 31435611,
+		"userId": 1904683,
+		"choreId": 4152814,
+		"points": 1,
+		"title": "KÜche Abwasch, Arbeitsfläche, Geräte putzen",
+		"completedAt": 1733337214,
+		"dueAt": 1733356799
+	},
+	{
+		"id": 31435608,
+		"userId": 1904683,
+		"choreId": 4152918,
+		"points": 2,
+		"title": "Kochen",
+		"completedAt": 1733337207,
+		"dueAt": 1733356799
+	},
+	{
+		"id": 31431652,
+		"userId": 1904683,
+		"choreId": 4152061,
+		"points": 1,
+		"title": "MÜll rausbringen",
+		"completedAt": 1733327930,
+		"dueAt": 1733183998
+	},
+	{
+		"id": 31418081,
+		"userId": 1904682,
+		"choreId": 4152075,
+		"points": 2,
+		"title": "Geschirr abwaschen",
+		"completedAt": 1733257511,
+		"dueAt": 1733270399
+	},
+	{
+		"id": 31416601,
+		"userId": 1904683,
+		"choreId": 4152063,
+		"points": 1,
+		"title": "Katzenklo",
+		"completedAt": 1733253466,
+		"dueAt": 1733270399
+	},
+	{
+		"id": 31416584,
+		"userId": 1904682,
+		"choreId": 4152785,
+		"points": 1,
+		"title": "BÜro aufräumen",
+		"completedAt": 1733253417,
+		"dueAt": 1733266799
+	},
+	{
+		"id": 31414488,
+		"userId": 1904682,
+		"choreId": 4152918,
+		"points": 2,
+		"title": "Kochen",
+		"completedAt": 1733248059,
+		"dueAt": 1733183999
+	},
+	{
+		"id": 31398695,
+		"userId": 1904683,
+		"choreId": 4152687,
+		"points": 1,
+		"title": "Wäsche waschen",
+		"completedAt": 1733174964,
+		"dueAt": 1733097598
+	},
+	{
+		"id": 31397701,
+		"userId": 1904683,
+		"choreId": 4152075,
+		"points": 2,
+		"title": "Geschirr abwaschen",
+		"completedAt": 1733171958,
+		"dueAt": 1733183999
+	},
+	{
+		"id": 31395356,
+		"userId": 1904683,
+		"choreId": 4152061,
+		"points": 1,
+		"title": "MÜll rausbringen",
+		"completedAt": 1733166496,
+		"dueAt": 1733097598
+	},
+	{
+		"id": 31367938,
+		"userId": 1904682,
+		"choreId": 4152071,
+		"points": 2,
+		"title": "KÜche aufräumen",
+		"completedAt": 1733073062,
+		"dueAt": 1733266799
+	},
+	{
+		"id": 31367527,
+		"userId": 1904682,
+		"choreId": 4152075,
+		"points": 2,
+		"title": "Geschirr abwaschen",
+		"completedAt": 1733072307,
+		"dueAt": 1733097599
+	},
+	{
+		"id": 31367519,
+		"userId": 1904682,
+		"choreId": 4152814,
+		"points": 1,
+		"title": "KÜche Abwasch, Arbeitsfläche, Geräte putzen",
+		"completedAt": 1733072290,
+		"dueAt": 1733266799
+	},
+	{
+		"id": 31367520,
+		"userId": 1904683,
+		"choreId": 4152791,
+		"points": 1,
+		"title": "Spinnweben K\/WZ\/B",
+		"completedAt": 1733072290,
+		"dueAt": 1733093999
+	},
+	{
+		"id": 31367516,
+		"userId": 1904683,
+		"choreId": 4152687,
+		"points": 1,
+		"title": "Wäsche waschen",
+		"completedAt": 1733072285,
+		"dueAt": 1732924798
+	},
+	{
+		"id": 31367513,
+		"userId": 1904683,
+		"choreId": 4152061,
+		"points": 1,
+		"title": "MÜll rausbringen",
+		"completedAt": 1733072278,
+		"dueAt": 1732838398
+	},
+	{
+		"id": 31367508,
+		"userId": 1904682,
+		"choreId": 4152918,
+		"points": 2,
+		"title": "Kochen",
+		"completedAt": 1733072277,
+		"dueAt": 1733011199
+	},
+	{
+		"id": 31367506,
+		"userId": 1904683,
+		"choreId": 4152062,
+		"points": 1,
+		"title": "Staubsaugen",
+		"completedAt": 1733072271,
+		"dueAt": 1733093999
+	},
+	{
+		"id": 31359757,
+		"userId": 1904682,
+		"choreId": 4152753,
+		"points": 2,
+		"title": "Wäsche zusammenlegen",
+		"completedAt": 1733058784,
+		"dueAt": 1733097599
+	},
+	{
+		"id": 31359752,
+		"userId": 1904682,
+		"choreId": 4152755,
+		"points": 2,
+		"title": "BÜgeln",
+		"completedAt": 1733058775,
+		"dueAt": 1732921199
+	},
+	{
+		"id": 31348641,
+		"userId": 1904683,
+		"choreId": 4152075,
+		"points": 2,
+		"title": "Geschirr abwaschen",
+		"completedAt": 1733010705,
+		"dueAt": 1733011199
+	},
+	{
+		"id": 31348501,
+		"userId": 1904683,
+		"choreId": 4152063,
+		"points": 1,
+		"title": "Katzenklo",
+		"completedAt": 1733008628,
+		"dueAt": 1733007599
+	},
+	{
+		"id": 31324206,
+		"userId": 1904683,
+		"choreId": 4152075,
+		"points": 2,
+		"title": "Geschirr abwaschen",
+		"completedAt": 1732902604,
+		"dueAt": 1732924799
+	},
+	{
+		"id": 31324203,
+		"userId": 1904683,
+		"choreId": 4152918,
+		"points": 2,
+		"title": "Kochen",
+		"completedAt": 1732902599,
+		"dueAt": 1732924799
+	},
+	{
+		"id": 31309758,
+		"userId": 1904683,
+		"choreId": 4152687,
+		"points": 1,
+		"title": "Wäsche waschen",
+		"completedAt": 1732840420,
+		"dueAt": 1732838398
+	},
+	{
+		"id": 31309497,
+		"userId": 1904683,
+		"choreId": 4152687,
+		"points": 1,
+		"title": "Wäsche waschen",
+		"completedAt": 1732834991,
+		"dueAt": 1732838398
+	},
+	{
+		"id": 31308545,
+		"userId": 1904683,
+		"choreId": 4152753,
+		"points": 2,
+		"title": "Wäsche zusammenlegen",
+		"completedAt": 1732828756,
+		"dueAt": 1733097599
+	},
+	{
+		"id": 31308538,
+		"userId": 1904683,
+		"choreId": 4152687,
+		"points": 1,
+		"title": "Wäsche waschen",
+		"completedAt": 1732828746,
+		"dueAt": 1732838398
+	},
+	{
+		"id": 31308102,
+		"userId": 1904682,
+		"choreId": 4152753,
+		"points": 2,
+		"title": "Wäsche zusammenlegen",
+		"completedAt": 1732827145,
+		"dueAt": 1733093999
+	},
+	{
+		"id": 31305930,
+		"userId": 1904683,
+		"choreId": 4152061,
+		"points": 1,
+		"title": "MÜll rausbringen",
+		"completedAt": 1732819357,
+		"dueAt": 1732838398
+	},
+	{
+		"id": 31302889,
+		"userId": 1904682,
+		"choreId": 4152918,
+		"points": 2,
+		"title": "Kochen",
+		"completedAt": 1732811151,
+		"dueAt": 1732834799
+	},
+	{
+		"id": 31302886,
+		"userId": 1904682,
+		"choreId": 4152075,
+		"points": 2,
+		"title": "Geschirr abwaschen",
+		"completedAt": 1732811147,
+		"dueAt": 1732834799
+	},
+	{
+		"id": 31299604,
+		"userId": 1904683,
+		"choreId": 4152075,
+		"points": 2,
+		"title": "Geschirr abwaschen",
+		"completedAt": 1732801124,
+		"dueAt": 1733007599
+	},
+	{
+		"id": 31299599,
+		"userId": 1904683,
+		"choreId": 4152061,
+		"points": 1,
+		"title": "MÜll rausbringen",
+		"completedAt": 1732801112,
+		"dueAt": 1732838398
+	},
+	{
+		"id": 31298861,
+		"userId": 1904683,
+		"choreId": 4152687,
+		"points": 1,
+		"title": "Wäsche waschen",
+		"completedAt": 1732798723,
+		"dueAt": 1733093999
+	},
+	{
+		"id": 31298841,
+		"userId": 1904683,
+		"choreId": 4152061,
+		"points": 1,
+		"title": "MÜll rausbringen",
+		"completedAt": 1732798699,
+		"dueAt": 1732838398
+	},
+	{
+		"id": 31298828,
+		"userId": 1904682,
+		"choreId": 4152075,
+		"points": 2,
+		"title": "Geschirr abwaschen",
+		"completedAt": 1732798651,
+		"dueAt": 1732921199
+	},
+	{
+		"id": 31298682,
+		"userId": 1904682,
+		"choreId": 4152061,
+		"points": 1,
+		"title": "MÜll rausbringen",
+		"completedAt": 1732798301,
+		"dueAt": 1732838398
+	},
+	{
+		"id": 31298609,
+		"userId": 1904683,
+		"choreId": 4152075,
+		"points": 2,
+		"title": "Geschirr abwaschen",
+		"completedAt": 1732798137,
+		"dueAt": 1732751998
+	},
+	{
+		"id": 31298590,
+		"userId": 1904683,
+		"choreId": 4152061,
+		"points": 1,
+		"title": "MÜll rausbringen",
+		"completedAt": 1732798085,
+		"dueAt": 1732834799
+	}
+]

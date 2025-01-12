@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wifi Setup</title>
+</head>
+
+<body>
+    <header>
+        <div class="title">
+            <h1>Wifi Setup</h1>
+
+            <svg xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512">
+                <path
+                    d="M332.41 310.59a115 115 0 00-152.8 0M393.46 249.54a201.26 201.26 0 00-274.92 0M447.72 182.11a288 288 0 00-383.44 0"
+                    fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                    stroke-width="32" />
+                <path d="M256 416a32 32 0 1132-32 32 32 0 01-32 32z" />
+            </svg>
+        </div>
+        <p>Please enter name and password of you local wifi to start the setup process</p>
+    </header>
+    <main>
+        <form id="wifi-credential-form" method="POST">
+            <label for="ssid">SSID (name)
+                <input type="text" id="ssid" name="ssid">
+            </label>
+            <label for="password">Password
+                <input type="password" id="password" name="password">
+            </label>
+            <button id="form-submit" type="submit">Connect to wifi</button>
+        </form>
+        <div id="feedback">
+            <p id="msg"></p>
+            <div id="loader" class="loader"></div>
+        </div>
+    </main>
+    <script>
+        const feedback = document.getElementById('feedback');
+        const msg = document.getElementById('msg');
+        const loader = document.getElementById('loader');
+        const form = document.getElementById('wifi-credential-form');
+        const submitBtn = document.getElementById('form-submit');
+        let checkWifiInterval;
+
+        //triggers watchdog
+        form.addEventListener('submit', (e) => {
+            e.preventDefault();
+            //window.location.href("http://127.0.0.1:5500/data/index.html");
+            feedback.style.opacity = 1;
+            submitBtn.disabled = true;
+            const formdata = new FormData(form);
+            const ssid = formdata.get('ssid');
+            const pw = formdata.get('password');
+            if(ssid == '' || pw == ''){
+                msg.classList.add('error-msg');
+                msg.innerText = 'Please fill in all fields';
+                return;
+            }
+            submitWifiCredentials(ssid, pw);
+        });
+
+        async function submitWifiCredentials(ssid, pw){
+            const response = await fetch('/connect_wifi', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/x-www-form-urlencoded'
+                },
+                body: 'ssid=' + encodeURIComponent(ssid) + '&password=' + encodeURIComponent(pw)
+            });
+            if(response.status == 200){
+                msg.classList.remove('error-msg');
+                msg.innerText = 'Connecting to wifi';
+                loader.style.display = 'block';
+                checkWifiInterval = setInterval(checkStatus, 2000);
+            }else{
+                msg.classList.add("error-msg");
+                data = response.json();
+                console.log("msg",data.msg);
+                console.log("response", response);
+                console.log("data", response.json());
+                msg.innerText = "Sorry, something went wrong! Please try again later."
+            }
+        }
+
+        function checkStatus() {
+            fetch('/status')
+              .then(response => response.json())
+              .then(data => {
+                if (data.status == '3') {
+                    loader.style.display = 'none';
+                    window.location.href = '/';
+                    clearInterval(checkWifiInterval);
+                } else if (data.status == '1') {
+                    loader.style.display = 'none';
+                    msg.classList.add('error-msg');
+                    msg.innerText = 'Connection failed. Please double-check your Wi-Fi credentials and try again.';
+                    clearInterval(checkWifiInterval);
+                    submitBtn.disabled = false;
+                    
+                } else {
+                    loader.style.display = 'block';
+                    msg.classList.remove('error-msg');
+                    msg.innerText = 'Connecting to wifi';
+                }
+              })
+              .catch(error => console.error('Error:', error));
+          }
+    </script>
+
+</body>
+
+</html>
+
+<style>
+    :root {
+        --color-primary: #F6AA1C;
+        --color-secondary: #F6AA1C;
+        --color-light: #f8f9fa;
+        --color-medium: #adb5bd;
+        --color-dark: #212529;
+        --color-white: #fff;
+        --color-black: #000;
+        --fofa: "Poppins", "Montserrat", "Arial", sans-serif;
+        --box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+        --border-radius: 8px;
+    }
+
+    body {
+        margin: 0;
+        background-color: var(--color-light);
+        font-family: var(--fofa);
+        color: var(--color-dark);
+    }
+
+    * {
+        box-sizing: border-box;
+    }
+
+    h1 {
+        margin: 0;
+        font-size: 32px;
+        color: var(--color-secondary);
+    }
+
+    p {
+        margin: 0;
+        color: var(--color-medium);
+    }
+    p#msg{
+        color: var(--color-dark);
+        font-weight: bold;
+    }
+    p#msg.error-msg{
+        color: darkred;
+    }
+
+    .title {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 12px;
+    }
+
+    .title svg {
+        height: 32px;
+        fill: var(--color-secondary);
+        color: var(--color-secondary);
+        border-radius: 100%;
+        box-shadow: var(--box-shadow);
+        padding: 2px;
+        border: 2px solid var(--color-secondary);
+    }
+
+    header {
+        border-bottom: 2px solid var(--color-secondary);
+    }
+
+
+
+    header,
+    #wifi-credential-form, #feedback {
+        padding: 12px;
+        margin: 25px;
+        background-color: var(--color-white);
+        box-shadow: var(--box-shadow);
+        border-radius: var(--border-radius);
+    }
+
+    #wifi-credential-form label {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        font-size: 18px;
+        margin-bottom: 12px;
+        font-weight: bold;
+    }
+
+    #wifi-credential-form input:focus {
+        outline: 2px solid var(--color-primary);
+    }
+
+    #wifi-credential-form input {
+        width: 100%;
+        padding: 12px;
+        margin: 6px 0;
+        border: 1px solid var(--color-medium);
+        border-radius: var(--border-radius);
+        font-size: 18px;
+        outline-color: var(--color-secondary);
+    }
+
+    #wifi-credential-form button {
+        width: 100%;
+        background-color: var(--color-primary);
+        color: var(--color-light);
+        height: 52px;
+        border: none;
+        cursor: pointer;
+        font-size: 18px;
+        border-radius: var(--border-radius);
+        transition: all .3s ease-in;
+    }
+    #wifi-credential-form button:disabled {
+        background-color: var(--color-medium);
+        color: var(--color-dark);
+    }
+
+    @media(hover:hover) {
+        #wifi-credential-form button:hover {
+            background: var(--color-white);
+            border: 2px solid var(--color-primary);
+            color: var(--color-primary);
+        }
+    }
+
+    #feedback {
+        opacity: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .loader {
+        margin-top: 12px;
+        width: 120px;
+        height: 22px;
+        border-radius: 20px;
+        color: var(--color-primary);
+        border: 2px solid;
+        position: relative;
+    }
+
+    .loader::before {
+        content: "";
+        position: absolute;
+        margin: 2px;
+        inset: 0 100% 0 0;
+        border-radius: inherit;
+        background: currentColor;
+        animation: l6 2s infinite;
+    }
+
+    @keyframes l6 {
+        100% {
+            inset: 0
+        }
+    }
+</style>

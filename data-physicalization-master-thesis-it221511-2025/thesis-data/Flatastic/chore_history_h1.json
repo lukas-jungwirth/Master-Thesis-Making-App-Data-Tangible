@@ -1,0 +1,254 @@
+[
+	{
+		"id": 31535769,
+		"userId": 1904661,
+		"choreId": 4147721,
+		"points": 1,
+		"title": "Geschirrspüler ausräumen",
+		"completedAt": 1733754413,
+		"dueAt": 1733875199
+	},
+	{
+		"id": 31535764,
+		"userId": 1904661,
+		"choreId": 4147706,
+		"points": 1,
+		"title": "Küche putzen",
+		"completedAt": 1733754409,
+		"dueAt": 1733875199
+	},
+	{
+		"id": 31535761,
+		"userId": 1904661,
+		"choreId": 4147706,
+		"points": 1,
+		"title": "Küche putzen",
+		"completedAt": 1733754402,
+		"dueAt": 1733875199
+	},
+	{
+		"id": 31535757,
+		"userId": 1904661,
+		"choreId": 4147706,
+		"points": 1,
+		"title": "Küche putzen",
+		"completedAt": 1733754395,
+		"dueAt": 1733702399
+	},
+	{
+		"id": 31535744,
+		"userId": 1904661,
+		"choreId": 4147711,
+		"points": 1,
+		"title": "Altpapier",
+		"completedAt": 1733754378,
+		"dueAt": 1735253999
+	},
+	{
+		"id": 31535738,
+		"userId": 1904661,
+		"choreId": 4147707,
+		"points": 1,
+		"title": "Restmüll",
+		"completedAt": 1733754362,
+		"dueAt": 1733443199
+	},
+	{
+		"id": 31486500,
+		"userId": 1904661,
+		"choreId": 4147721,
+		"points": 1,
+		"title": "Geschirrspüler ausräumen",
+		"completedAt": 1733575031,
+		"dueAt": 1733356799
+	},
+	{
+		"id": 31486485,
+		"userId": 1904661,
+		"choreId": 4147706,
+		"points": 1,
+		"title": "Küche putzen",
+		"completedAt": 1733575018,
+		"dueAt": 1733702399
+	},
+	{
+		"id": 31486484,
+		"userId": 1904661,
+		"choreId": 4147706,
+		"points": 1,
+		"title": "Küche putzen",
+		"completedAt": 1733575015,
+		"dueAt": 1733183999
+	},
+	{
+		"id": 31362261,
+		"userId": 1904661,
+		"choreId": 4147696,
+		"points": 1,
+		"title": "Toilette Putzen",
+		"completedAt": 1733062795,
+		"dueAt": 1733439599
+	},
+	{
+		"id": 31362256,
+		"userId": 1904661,
+		"choreId": 4147688,
+		"points": 2,
+		"title": "Bad putzen",
+		"completedAt": 1733062788,
+		"dueAt": 1732834799
+	},
+	{
+		"id": 31357057,
+		"userId": 1904661,
+		"choreId": 4156101,
+		"points": 2,
+		"title": "Wäsche aufhängen",
+		"completedAt": 1733054363,
+		"dueAt": 1733871599
+	},
+	{
+		"id": 31357050,
+		"userId": 1904661,
+		"choreId": 4156100,
+		"points": 1,
+		"title": "Wäsche waschen",
+		"completedAt": 1733054358,
+		"dueAt": 1733871599
+	},
+	{
+		"id": 31357014,
+		"userId": 1904661,
+		"choreId": 4147721,
+		"points": 1,
+		"title": "Geschirrspüler ausräumen",
+		"completedAt": 1733054328,
+		"dueAt": 1733356799
+	},
+	{
+		"id": 31357006,
+		"userId": 1904661,
+		"choreId": 4156102,
+		"points": 2,
+		"title": "Wäsche zusammenlegen",
+		"completedAt": 1733054323,
+		"dueAt": 1733266799
+	},
+	{
+		"id": 31355213,
+		"userId": 1904664,
+		"choreId": 4147696,
+		"points": 1,
+		"title": "Toilette Putzen",
+		"completedAt": 1733051410,
+		"dueAt": 1733439599
+	},
+	{
+		"id": 31355208,
+		"userId": 1904664,
+		"choreId": 4157171,
+		"points": 2,
+		"title": "Kochen",
+		"completedAt": 1733051399,
+		"dueAt": 1733353199
+	},
+	{
+		"id": 31355164,
+		"userId": 1904664,
+		"choreId": 4147729,
+		"points": 1,
+		"title": "Plastikmüll",
+		"completedAt": 1733051323,
+		"dueAt": 1732834799
+	},
+	{
+		"id": 31355147,
+		"userId": 1904664,
+		"choreId": 4147706,
+		"points": 1,
+		"title": "Küche putzen",
+		"completedAt": 1733051287,
+		"dueAt": 1733183999
+	},
+	{
+		"id": 31355143,
+		"userId": 1904664,
+		"choreId": 4147703,
+		"points": 1,
+		"title": "Wöchentlicher Einkauf",
+		"completedAt": 1733051282,
+		"dueAt": 1733180399
+	},
+	{
+		"id": 31355136,
+		"userId": 1904664,
+		"choreId": 4147707,
+		"points": 1,
+		"title": "Restmüll",
+		"completedAt": 1733051274,
+		"dueAt": 1733097599
+	},
+	{
+		"id": 31355127,
+		"userId": 1904664,
+		"choreId": 4147721,
+		"points": 1,
+		"title": "Geschirrspüler ausräumen",
+		"completedAt": 1733051265,
+		"dueAt": 1732834799
+	},
+	{
+		"id": 31355121,
+		"userId": 1904664,
+		"choreId": 4147706,
+		"points": 1,
+		"title": "Küche putzen",
+		"completedAt": 1733051249,
+		"dueAt": 1732665599
+	},
+	{
+		"id": 31355112,
+		"userId": 1904664,
+		"choreId": 4147711,
+		"points": 1,
+		"title": "Altpapier",
+		"completedAt": 1733051241,
+		"dueAt": 1732834799
+	},
+	{
+		"id": 31342589,
+		"userId": 1904661,
+		"choreId": 4156101,
+		"points": 2,
+		"title": "Wäsche aufhängen",
+		"completedAt": 1732981935,
+		"dueAt": 1733266799
+	},
+	{
+		"id": 31342584,
+		"userId": 1904661,
+		"choreId": 4156100,
+		"points": 1,
+		"title": "Wäsche waschen",
+		"completedAt": 1732981925,
+		"dueAt": 1733266799
+	},
+	{
+		"id": 31284230,
+		"userId": 1904661,
+		"choreId": 4147707,
+		"points": 1,
+		"title": "Restmüll",
+		"completedAt": 1732725062,
+		"dueAt": 1732834799
+	},
+	{
+		"id": 31246457,
+		"userId": 1904661,
+		"choreId": 4147706,
+		"points": 1,
+		"title": "Küche putzen",
+		"completedAt": 1732559324,
+		"dueAt": 1732665599
+	}
+]

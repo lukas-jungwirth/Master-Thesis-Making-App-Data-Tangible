@@ -1,0 +1,407 @@
+[
+	{
+		"id": 31625775,
+		"userId": 1660446,
+		"choreId": 4146502,
+		"points": 1,
+		"title": "Katzennapf reinigen",
+		"completedAt": 1734169342,
+		"dueAt": 1734047999
+	},
+	{
+		"id": 31625746,
+		"userId": 1660445,
+		"choreId": 3419726,
+		"points": 1,
+		"title": "Müll entsorgen",
+		"completedAt": 1734169301,
+		"dueAt": 1733529599
+	},
+	{
+		"id": 31620871,
+		"userId": 1660445,
+		"choreId": 3422693,
+		"points": 1,
+		"title": "Wäsche waschen",
+		"completedAt": 1734121110,
+		"dueAt": 1733615998
+	},
+	{
+		"id": 31611470,
+		"userId": 1660445,
+		"choreId": 4146501,
+		"points": 1,
+		"title": "Katzenklo",
+		"completedAt": 1734092965,
+		"dueAt": 1733529598
+	},
+	{
+		"id": 31583228,
+		"userId": 1660445,
+		"choreId": 4147138,
+		"points": 1,
+		"title": "Geschirr wegräumen",
+		"completedAt": 1733945932,
+		"dueAt": 1732834799
+	},
+	{
+		"id": 31583225,
+		"userId": 1660445,
+		"choreId": 4146502,
+		"points": 1,
+		"title": "Katzennapf reinigen",
+		"completedAt": 1733945926,
+		"dueAt": 1733615999
+	},
+	{
+		"id": 31494499,
+		"userId": 1660445,
+		"choreId": 3422693,
+		"points": 1,
+		"title": "Wäsche waschen",
+		"completedAt": 1733593520,
+		"dueAt": 1732751998
+	},
+	{
+		"id": 31491457,
+		"userId": 1660445,
+		"choreId": 3421384,
+		"points": 1,
+		"title": "Einkaufen",
+		"completedAt": 1733585302,
+		"dueAt": 1732924798
+	},
+	{
+		"id": 31463002,
+		"userId": 1660445,
+		"choreId": 4146501,
+		"points": 1,
+		"title": "Katzenklo",
+		"completedAt": 1733480357,
+		"dueAt": 1733183998
+	},
+	{
+		"id": 31462997,
+		"userId": 1660445,
+		"choreId": 3419727,
+		"points": 1,
+		"title": "Geschirr abwaschen",
+		"completedAt": 1733480350,
+		"dueAt": 1733356798
+	},
+	{
+		"id": 31462996,
+		"userId": 1660445,
+		"choreId": 4146502,
+		"points": 1,
+		"title": "Katzennapf reinigen",
+		"completedAt": 1733480344,
+		"dueAt": 1733443199
+	},
+	{
+		"id": 31425090,
+		"userId": 1660445,
+		"choreId": 3419727,
+		"points": 1,
+		"title": "Geschirr abwaschen",
+		"completedAt": 1733308778,
+		"dueAt": 1733270398
+	},
+	{
+		"id": 31425086,
+		"userId": 1660445,
+		"choreId": 4146502,
+		"points": 1,
+		"title": "Katzennapf reinigen",
+		"completedAt": 1733308765,
+		"dueAt": 1733356799
+	},
+	{
+		"id": 31406997,
+		"userId": 1660446,
+		"choreId": 3419727,
+		"points": 1,
+		"title": "Geschirr abwaschen",
+		"completedAt": 1733227820,
+		"dueAt": 1733270398
+	},
+	{
+		"id": 31406994,
+		"userId": 1660445,
+		"choreId": 3419727,
+		"points": 1,
+		"title": "Geschirr abwaschen",
+		"completedAt": 1733227817,
+		"dueAt": 1732579198
+	},
+	{
+		"id": 31406990,
+		"userId": 1660446,
+		"choreId": 4146502,
+		"points": 1,
+		"title": "Katzennapf reinigen",
+		"completedAt": 1733227810,
+		"dueAt": 1733270399
+	},
+	{
+		"id": 31380967,
+		"userId": 1660445,
+		"choreId": 4146501,
+		"points": 1,
+		"title": "Katzenklo",
+		"completedAt": 1733132790,
+		"dueAt": 1733097598
+	},
+	{
+		"id": 31380964,
+		"userId": 1660445,
+		"choreId": 4146502,
+		"points": 1,
+		"title": "Katzennapf reinigen",
+		"completedAt": 1733132786,
+		"dueAt": 1733183999
+	},
+	{
+		"id": 31366282,
+		"userId": 1660446,
+		"choreId": 4146502,
+		"points": 1,
+		"title": "Katzennapf reinigen",
+		"completedAt": 1733070009,
+		"dueAt": 1733183999
+	},
+	{
+		"id": 31366279,
+		"userId": 1660446,
+		"choreId": 4146501,
+		"points": 1,
+		"title": "Katzenklo",
+		"completedAt": 1733070002,
+		"dueAt": 1733097598
+	},
+	{
+		"id": 31366255,
+		"userId": 1660445,
+		"choreId": 4146501,
+		"points": 1,
+		"title": "Katzenklo",
+		"completedAt": 1733069969,
+		"dueAt": 1732924798
+	},
+	{
+		"id": 31366247,
+		"userId": 1660445,
+		"choreId": 4146502,
+		"points": 1,
+		"title": "Katzennapf reinigen",
+		"completedAt": 1733069958,
+		"dueAt": 1733011199
+	},
+	{
+		"id": 31326078,
+		"userId": 1660445,
+		"choreId": 4154919,
+		"points": 1,
+		"title": "Abstauben",
+		"completedAt": 1732909833,
+		"dueAt": 1733180399
+	},
+	{
+		"id": 31326077,
+		"userId": 1660446,
+		"choreId": 3419726,
+		"points": 1,
+		"title": "Müll entsorgen",
+		"completedAt": 1732909829,
+		"dueAt": 1700434799
+	},
+	{
+		"id": 31326075,
+		"userId": 1660446,
+		"choreId": 3419725,
+		"points": 2,
+		"title": "Bad putzen",
+		"completedAt": 1732909827,
+		"dueAt": 1700434799
+	},
+	{
+		"id": 31326064,
+		"userId": 1660445,
+		"choreId": 3419721,
+		"points": 2,
+		"title": "Staubsaugen",
+		"completedAt": 1732909801,
+		"dueAt": 1700434799
+	},
+	{
+		"id": 31322234,
+		"userId": 1660445,
+		"choreId": 3421384,
+		"points": 1,
+		"title": "Einkaufen",
+		"completedAt": 1732896906,
+		"dueAt": 1732665598
+	},
+	{
+		"id": 31310703,
+		"userId": 1660445,
+		"choreId": 4146501,
+		"points": 1,
+		"title": "Katzenklo",
+		"completedAt": 1732862885,
+		"dueAt": 1732838398
+	},
+	{
+		"id": 31310702,
+		"userId": 1660445,
+		"choreId": 4146502,
+		"points": 1,
+		"title": "Katzennapf reinigen",
+		"completedAt": 1732862875,
+		"dueAt": 1732924799
+	},
+	{
+		"id": 31296392,
+		"userId": 1660445,
+		"choreId": 4146501,
+		"points": 1,
+		"title": "Katzenklo",
+		"completedAt": 1732791054,
+		"dueAt": 1732751998
+	},
+	{
+		"id": 31296387,
+		"userId": 1660445,
+		"choreId": 4146502,
+		"points": 1,
+		"title": "Katzennapf reinigen",
+		"completedAt": 1732791046,
+		"dueAt": 1732838399
+	},
+	{
+		"id": 31278756,
+		"userId": 1660445,
+		"choreId": 3422695,
+		"points": 2,
+		"title": "Wäsche abnehmen & verstauen",
+		"completedAt": 1732709438,
+		"dueAt": 1700521199
+	},
+	{
+		"id": 31278755,
+		"userId": 1660445,
+		"choreId": 3422693,
+		"points": 1,
+		"title": "Wäsche waschen",
+		"completedAt": 1732709433,
+		"dueAt": 1700521199
+	},
+	{
+		"id": 31274729,
+		"userId": 1660445,
+		"choreId": 4146501,
+		"points": 1,
+		"title": "Katzenklo",
+		"completedAt": 1732697019,
+		"dueAt": 1732665598
+	},
+	{
+		"id": 31274726,
+		"userId": 1660445,
+		"choreId": 4146502,
+		"points": 1,
+		"title": "Katzennapf reinigen",
+		"completedAt": 1732697011,
+		"dueAt": 1732751999
+	},
+	{
+		"id": 31264439,
+		"userId": 1660445,
+		"choreId": 3421384,
+		"points": 1,
+		"title": "Einkaufen",
+		"completedAt": 1732638765,
+		"dueAt": 1700953199
+	},
+	{
+		"id": 31253977,
+		"userId": 1660445,
+		"choreId": 4146502,
+		"points": 1,
+		"title": "Katzennapf reinigen",
+		"completedAt": 1732605518,
+		"dueAt": 1732748399
+	},
+	{
+		"id": 31253976,
+		"userId": 1660445,
+		"choreId": 4146501,
+		"points": 1,
+		"title": "Katzenklo",
+		"completedAt": 1732605515,
+		"dueAt": 1732579198
+	},
+	{
+		"id": 31249593,
+		"userId": 1660446,
+		"choreId": 3419727,
+		"points": 1,
+		"title": "Geschirr abwaschen",
+		"completedAt": 1732566166,
+		"dueAt": 1732748399
+	},
+	{
+		"id": 31235797,
+		"userId": 1660445,
+		"choreId": 3419727,
+		"points": 1,
+		"title": "Geschirr waschen",
+		"completedAt": 1732534458,
+		"dueAt": 1700351999
+	},
+	{
+		"id": 31230586,
+		"userId": 1660445,
+		"choreId": 4146502,
+		"points": 1,
+		"title": "Katzennapf reinigen",
+		"completedAt": 1732517881,
+		"dueAt": 1732834799
+	},
+	{
+		"id": 31230580,
+		"userId": 1660445,
+		"choreId": 4146501,
+		"points": 1,
+		"title": "Katzenklo",
+		"completedAt": 1732517853,
+		"dueAt": 1732834799
+	},
+	{
+		"id": 24428177,
+		"userId": 1660445,
+		"choreId": 3421384,
+		"points": 1,
+		"title": "Einkaufen",
+		"completedAt": 1700238530,
+		"dueAt": 1700434799
+	},
+	{
+		"id": 24428176,
+		"userId": 1660445,
+		"choreId": 3419727,
+		"points": 1,
+		"title": "Geschirr waschen",
+		"completedAt": 1700238523,
+		"dueAt": 1700265599
+	},
+	{
+		"id": 24414534,
+		"userId": 1660445,
+		"choreId": 3419727,
+		"points": 1,
+		"title": "Geschirr waschen",
+		"completedAt": 1700161063,
+		"dueAt": 1700175599
+	}
+]

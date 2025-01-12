@@ -1,0 +1,155 @@
+[
+	{
+		"id": 31544276,
+		"userId": 1904685,
+		"choreId": 4154067,
+		"points": 1,
+		"title": "Müll rausbringen",
+		"completedAt": 1733772968,
+		"dueAt": 1733183998
+	},
+	{
+		"id": 31544269,
+		"userId": 1904685,
+		"choreId": 4154072,
+		"points": 2,
+		"title": "Klo reinigen",
+		"completedAt": 1733772959,
+		"dueAt": 1733788799
+	},
+	{
+		"id": 31544267,
+		"userId": 1904685,
+		"choreId": 4154071,
+		"points": 2,
+		"title": "Einkaufen gehen",
+		"completedAt": 1733772954,
+		"dueAt": 1733788799
+	},
+	{
+		"id": 31544261,
+		"userId": 1904685,
+		"choreId": 4154070,
+		"points": 1,
+		"title": "Staubsaugen",
+		"completedAt": 1733772947,
+		"dueAt": 1733785199
+	},
+	{
+		"id": 31544257,
+		"userId": 1904685,
+		"choreId": 4154066,
+		"points": 2,
+		"title": "Bad putzen",
+		"completedAt": 1733772939,
+		"dueAt": 1733785199
+	},
+	{
+		"id": 31544226,
+		"userId": 1904684,
+		"choreId": 4154069,
+		"points": 1,
+		"title": "Spülmaschine ausräumen",
+		"completedAt": 1733772894,
+		"dueAt": 1733788798
+	},
+	{
+		"id": 31544223,
+		"userId": 1904684,
+		"choreId": 4154069,
+		"points": 1,
+		"title": "Spülmaschine ausräumen",
+		"completedAt": 1733772887,
+		"dueAt": 1733356798
+	},
+	{
+		"id": 31489362,
+		"userId": 1904684,
+		"choreId": 4154073,
+		"points": 1,
+		"title": "Blumen gie\u00dfen",
+		"completedAt": 1733580602,
+		"dueAt": 1733180399
+	},
+	{
+		"id": 31430210,
+		"userId": 1904684,
+		"choreId": 4154069,
+		"points": 1,
+		"title": "Spülmaschine ausräumen",
+		"completedAt": 1733324162,
+		"dueAt": 1733011198
+	},
+	{
+		"id": 31394850,
+		"userId": 1904684,
+		"choreId": 4154065,
+		"points": 2,
+		"title": "Küche putzen",
+		"completedAt": 1733165403,
+		"dueAt": 1733180399
+	},
+	{
+		"id": 31394829,
+		"userId": 1904685,
+		"choreId": 4154071,
+		"points": 2,
+		"title": "Einkaufen gehen",
+		"completedAt": 1733165366,
+		"dueAt": 1733353199
+	},
+	{
+		"id": 31394827,
+		"userId": 1904685,
+		"choreId": 4154067,
+		"points": 1,
+		"title": "Müll rausbringen",
+		"completedAt": 1733165359,
+		"dueAt": 1733180399
+	},
+	{
+		"id": 31394810,
+		"userId": 1904685,
+		"choreId": 4154066,
+		"points": 2,
+		"title": "Bad putzen",
+		"completedAt": 1733165334,
+		"dueAt": 1733180399
+	},
+	{
+		"id": 31394805,
+		"userId": 1904685,
+		"choreId": 4154070,
+		"points": 1,
+		"title": "Staubsaugen",
+		"completedAt": 1733165330,
+		"dueAt": 1733180399
+	},
+	{
+		"id": 31394804,
+		"userId": 1904685,
+		"choreId": 4154072,
+		"points": 2,
+		"title": "Klo reinigen",
+		"completedAt": 1733165324,
+		"dueAt": 1733180399
+	},
+	{
+		"id": 31347109,
+		"userId": 1904684,
+		"choreId": 4154069,
+		"points": 1,
+		"title": "Spülmaschine ausräumen",
+		"completedAt": 1732998620,
+		"dueAt": 1732924798
+	},
+	{
+		"id": 31325606,
+		"userId": 1904684,
+		"choreId": 4154069,
+		"points": 1,
+		"title": "Spülmaschine ausräumen",
+		"completedAt": 1732907945,
+		"dueAt": 1733180399
+	}
+]

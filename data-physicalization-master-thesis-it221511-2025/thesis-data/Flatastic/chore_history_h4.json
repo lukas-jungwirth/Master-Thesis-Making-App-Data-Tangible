@@ -1,0 +1,281 @@
+[
+	{
+		"id": 31630502,
+		"userId": 1904680,
+		"choreId": 4154865,
+		"points": 2,
+		"title": "Kochen",
+		"completedAt": 1734178028,
+		"dueAt": 1734307199
+	},
+	{
+		"id": 31630496,
+		"userId": 1904680,
+		"choreId": 4154865,
+		"points": 2,
+		"title": "Kochen",
+		"completedAt": 1734178020,
+		"dueAt": 1733270399
+	},
+	{
+		"id": 31630489,
+		"userId": 1904680,
+		"choreId": 4170028,
+		"points": 1,
+		"title": "Einkaufen",
+		"completedAt": 1734178011,
+		"dueAt": 1734220798
+	},
+	{
+		"id": 31630481,
+		"userId": 1904680,
+		"choreId": 4170028,
+		"points": 1,
+		"title": "Einkaufen",
+		"completedAt": 1734178006,
+		"dueAt": 1733615998
+	},
+	{
+		"id": 31630465,
+		"userId": 1904680,
+		"choreId": 4154858,
+		"points": 1,
+		"title": "Spülmaschine ausräumen",
+		"completedAt": 1734177991,
+		"dueAt": 1734220798
+	},
+	{
+		"id": 31630461,
+		"userId": 1904680,
+		"choreId": 4154858,
+		"points": 1,
+		"title": "Spülmaschine ausräumen",
+		"completedAt": 1734177986,
+		"dueAt": 1733615998
+	},
+	{
+		"id": 31630458,
+		"userId": 1904680,
+		"choreId": 4149793,
+		"points": 2,
+		"title": "Küche putzen",
+		"completedAt": 1734177978,
+		"dueAt": 1732921199
+	},
+	{
+		"id": 31493756,
+		"userId": 1904681,
+		"choreId": 4170028,
+		"points": 1,
+		"title": "Einkaufen",
+		"completedAt": 1733591433,
+		"dueAt": 1733871599
+	},
+	{
+		"id": 31490404,
+		"userId": 1904680,
+		"choreId": 4154858,
+		"points": 1,
+		"title": "Spülmaschine ausräumen",
+		"completedAt": 1733582893,
+		"dueAt": 1733183998
+	},
+	{
+		"id": 31490393,
+		"userId": 1904680,
+		"choreId": 4154861,
+		"points": 4,
+		"title": "Küche putzen",
+		"completedAt": 1733582871,
+		"dueAt": 1733180399
+	},
+	{
+		"id": 31453278,
+		"userId": 1904681,
+		"choreId": 4158519,
+		"points": 1,
+		"title": "Wäsche wegräumen",
+		"completedAt": 1733420007,
+		"dueAt": 1733097598
+	},
+	{
+		"id": 31453277,
+		"userId": 1904681,
+		"choreId": 4157643,
+		"points": 1,
+		"title": "Wäsche waschen",
+		"completedAt": 1733419996,
+		"dueAt": 1733698799
+	},
+	{
+		"id": 31453274,
+		"userId": 1904681,
+		"choreId": 4158516,
+		"points": 1,
+		"title": "Wäsche aufhängen",
+		"completedAt": 1733419991,
+		"dueAt": 1733097598
+	},
+	{
+		"id": 31396301,
+		"userId": 1904680,
+		"choreId": 4154865,
+		"points": 2,
+		"title": "Kochen",
+		"completedAt": 1733168780,
+		"dueAt": 1733097599
+	},
+	{
+		"id": 31396287,
+		"userId": 1904680,
+		"choreId": 4154858,
+		"points": 1,
+		"title": "Spülmaschine ausräumen",
+		"completedAt": 1733168755,
+		"dueAt": 1733097598
+	},
+	{
+		"id": 31375236,
+		"userId": 1904681,
+		"choreId": 4159017,
+		"points": 2,
+		"title": "Bett überziehen",
+		"completedAt": 1733088372,
+		"dueAt": 1733093999
+	},
+	{
+		"id": 31374690,
+		"userId": 1904681,
+		"choreId": 4154858,
+		"points": 1,
+		"title": "Spülmaschine ausräumen",
+		"completedAt": 1733086828,
+		"dueAt": 1733097598
+	},
+	{
+		"id": 31374683,
+		"userId": 1904681,
+		"choreId": 4157643,
+		"points": 1,
+		"title": "Wäsche waschen",
+		"completedAt": 1733086808,
+		"dueAt": 1733698799
+	},
+	{
+		"id": 31374681,
+		"userId": 1904681,
+		"choreId": 4149801,
+		"points": 1,
+		"title": "Müll rausbringen",
+		"completedAt": 1733086799,
+		"dueAt": 1733702399
+	},
+	{
+		"id": 31374673,
+		"userId": 1904681,
+		"choreId": 4158519,
+		"points": 1,
+		"title": "Wäsche wegräumen",
+		"completedAt": 1733086781,
+		"dueAt": 1733097598
+	},
+	{
+		"id": 31374671,
+		"userId": 1904681,
+		"choreId": 4158516,
+		"points": 1,
+		"title": "Wäsche aufhängen",
+		"completedAt": 1733086778,
+		"dueAt": 1733097598
+	},
+	{
+		"id": 31374630,
+		"userId": 1904681,
+		"choreId": 4149801,
+		"points": 1,
+		"title": "Müll rausbringen",
+		"completedAt": 1733086634,
+		"dueAt": 1733093999
+	},
+	{
+		"id": 31374359,
+		"userId": 1904681,
+		"choreId": 4158516,
+		"points": 1,
+		"title": "Wäsche aufhängen",
+		"completedAt": 1733085967,
+		"dueAt": 1733097598
+	},
+	{
+		"id": 31374351,
+		"userId": 1904681,
+		"choreId": 4158519,
+		"points": 1,
+		"title": "Wäsche wegräumen",
+		"completedAt": 1733085949,
+		"dueAt": 1733353199
+	},
+	{
+		"id": 31374349,
+		"userId": 1904681,
+		"choreId": 4158516,
+		"points": 1,
+		"title": "Wäsche aufhängen",
+		"completedAt": 1733085942,
+		"dueAt": 1733097598
+	},
+	{
+		"id": 31374341,
+		"userId": 1904680,
+		"choreId": 4158516,
+		"points": 1,
+		"title": "Wäsche aufhängen",
+		"completedAt": 1733085916,
+		"dueAt": 1733353199
+	},
+	{
+		"id": 31363335,
+		"userId": 1904681,
+		"choreId": 4157643,
+		"points": 1,
+		"title": "Wäsche waschen",
+		"completedAt": 1733064837,
+		"dueAt": 1733698799
+	},
+	{
+		"id": 31363300,
+		"userId": 1904681,
+		"choreId": 4154858,
+		"points": 1,
+		"title": "Spülmaschine ausräumen",
+		"completedAt": 1733064793,
+		"dueAt": 1733011198
+	},
+	{
+		"id": 31360702,
+		"userId": 1904680,
+		"choreId": 4157643,
+		"points": 1,
+		"title": "Wäsche waschen",
+		"completedAt": 1733060459,
+		"dueAt": 1733093999
+	},
+	{
+		"id": 31343125,
+		"userId": 1904680,
+		"choreId": 4154865,
+		"points": 2,
+		"title": "Kochen",
+		"completedAt": 1732983571,
+		"dueAt": 1733180399
+	},
+	{
+		"id": 31343122,
+		"userId": 1904680,
+		"choreId": 4154858,
+		"points": 1,
+		"title": "Spülmaschine ausräumen",
+		"completedAt": 1732983562,
+		"dueAt": 1733180399
+	}
+]

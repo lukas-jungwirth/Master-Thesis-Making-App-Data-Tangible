@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Settings</title>
+</head>
+
+<body>
+    <header>
+        <div class="title">
+            <h1>Settings</h1>
+
+            <svg xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512">
+                <svg xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512">
+                    <path
+                        d="M262.29 192.31a64 64 0 1057.4 57.4 64.13 64.13 0 00-57.4-57.4zM416.39 256a154.34 154.34 0 01-1.53 20.79l45.21 35.46a10.81 10.81 0 012.45 13.75l-42.77 74a10.81 10.81 0 01-13.14 4.59l-44.9-18.08a16.11 16.11 0 00-15.17 1.75A164.48 164.48 0 01325 400.8a15.94 15.94 0 00-8.82 12.14l-6.73 47.89a11.08 11.08 0 01-10.68 9.17h-85.54a11.11 11.11 0 01-10.69-8.87l-6.72-47.82a16.07 16.07 0 00-9-12.22 155.3 155.3 0 01-21.46-12.57 16 16 0 00-15.11-1.71l-44.89 18.07a10.81 10.81 0 01-13.14-4.58l-42.77-74a10.8 10.8 0 012.45-13.75l38.21-30a16.05 16.05 0 006-14.08c-.36-4.17-.58-8.33-.58-12.5s.21-8.27.58-12.35a16 16 0 00-6.07-13.94l-38.19-30A10.81 10.81 0 0149.48 186l42.77-74a10.81 10.81 0 0113.14-4.59l44.9 18.08a16.11 16.11 0 0015.17-1.75A164.48 164.48 0 01187 111.2a15.94 15.94 0 008.82-12.14l6.73-47.89A11.08 11.08 0 01213.23 42h85.54a11.11 11.11 0 0110.69 8.87l6.72 47.82a16.07 16.07 0 009 12.22 155.3 155.3 0 0121.46 12.57 16 16 0 0015.11 1.71l44.89-18.07a10.81 10.81 0 0113.14 4.58l42.77 74a10.8 10.8 0 01-2.45 13.75l-38.21 30a16.05 16.05 0 00-6.05 14.08c.33 4.14.55 8.3.55 12.47z"
+                        fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                        stroke-width="32" />
+                </svg>
+            </svg>
+        </div>
+        <p>Assign user and color to each column</p>
+    </header>
+    <div class="column-setup" style="display: none;">
+        <div class="column-wrapper" id="column-1">
+            <h2>Column 1</h2>
+            <div class="setting-wrapper">
+                <select name="user-column-1" id="user-column-1">
+                    <option value="0">No user selected</option>
+                </select>
+                <input id="color-picker-1" type="color" value="#0000ff">
+            </div>
+        </div>
+        <div class="column-wrapper" id="column-2">
+            <h2>Column 2</h2>
+            <div class="setting-wrapper">
+                <select name="user-column-2" id="user-column-2">
+                    <option value="0">No user selected</option>
+                </select>
+                <input id="color-picker-2" type="color" value="#00ff00">
+            </div>
+        </div>
+        <button id="save">Save settings</button>
+    </div>
+    <div id="feedback">
+        <div class="loader"></div>
+    </div>
+	<div id="resetSection">
+		<details>
+			<summary>
+				Reset section
+			</summary>
+			<button id="resetSystem">Reset points</button>
+		</details>
+	</div>
+</body>
+<script>
+    let flatmates = [];
+    const columnCount = 2;
+    const feedback = document.getElementById('feedback');
+	const resetSection = document.getElementById("resetSection");
+    const columnSetup = document.querySelector('.column-setup');
+
+    async function initialize() {
+        
+        try {
+            await Promise.all([getWGData(), getSettings()]);
+        } catch (error) {
+            console.error('Error in initialization:', error);
+        } finally {
+            feedback.style.display = 'none';
+            columnSetup.style.display = 'block';
+        }
+    }
+    
+    initialize();
+
+
+    async function getWGData() {
+        try {
+            const data = await fetch('/get_wg_data', {
+            //const data = await fetch('https://api.flatastic-app.com/index.php/api/wg', {
+                method: 'GET',  // Specify the method, this could be 'GET' if not already specified
+                headers: {
+                    'Content-Type': 'application/json',
+                    'X-API-KEY': 'zOaGEbhzVQGIlH3levtxTmFcepjSxOFM'  // Replace 'YOUR_API_KEY_HERE' with your actual API key
+                }
+            })
+                .then(response => response.json())
+                .then(data => {
+                    console.log(data);
+                    flatmates = data.flatmates;
+                    buildSelectOptions();
+
+                });
+        } catch (error) {
+            console.error(error);
+        }
+    }
+
+    async function getSettings() {
+        try {
+            const data = await fetch('/get_settings', {
+                method: 'GET',  // Specify the method, this could be 'GET' if not already specified
+                headers: {
+                    'Content-Type': 'application/json',
+                }
+            })
+                .then(response => response.json())
+                .then(data => {
+                    console.log(data);
+                    if (data.length > 0) {
+                        data.forEach(setting => {
+                            const column = setting.column;
+                            const user = setting.user;
+                            const color = setting.color;
+                            document.getElementById(`user-column-${column}`).value = user;
+                            document.getElementById(`color-picker-${column}`).value = color;
+
+                        });
+                    } else {
+                        setDefaultSettings();
+                    }
+                });
+        } catch (error) {
+            console.error(error);
+        }
+    }
+
+    function buildSelectOptions() {
+        let flatmatesOptions = '';
+        flatmates.forEach(flatmate => {
+            flatmatesOptions += `<option value="${flatmate.id}">${flatmate.firstName}</option>`;
+        });
+        const selects = document.querySelectorAll('select');
+        selects.forEach(select => {
+
+            select.innerHTML += flatmatesOptions;
+        });
+        for (let i = 1; i <= columnCount; i++) {
+            const select = document.getElementById(`user-column-${i}`);
+            select.addEventListener('change', (e) => {
+                //check if the user is already selected in another column
+                const selectedUser = e.target.value;
+                const selectedColumn = e.target.id.split('-')[2];
+                const otherColumns = [1, 2, 3].filter(column => column != selectedColumn);
+                otherColumns.forEach(column => {
+                    const otherSelect = document.getElementById(`user-column-${column}`);
+                    if (otherSelect.value == selectedUser) {
+                        otherSelect.value = 0;
+                    }
+                });
+            });
+
+        }
+    }
+
+    function setDefaultSettings() {
+        for (let i = 1; i <= columnCount; i++) {
+            const select = document.getElementById(`user-column-${i}`);
+            if (flatmates[i - 1]) {
+                select.value = flatmates[i - 1].id;
+            } else {
+                select.value = 0;
+            }
+        }
+    }
+
+    const saveButton = document.getElementById('save');
+    saveButton.addEventListener('click', (e) => {
+        saveSettings();
+    });
+
+    async function saveSettings() {
+        const columns = [1, 2, 3];
+        const settings = [];
+        let emptyUsers = 0;
+        for (let i = 1; i <= columnCount; i++) {
+            const user = document.getElementById(`user-column-${i}`).value;
+            const color = document.getElementById(`color-picker-${i}`).value;
+            const totalUsers = flatmates.length;
+            //check that all flate mates are assigned to a column
+            if (user == 0) {
+                emptyUsers++;
+                if (emptyUsers > columnCount - 1) {
+                    feedback.classList.remove('success');
+                    feedback.classList.add('error');
+                    feedback.innerHTML = 'Please assign at least one flatmate to a column';
+                    feedback.style.display = 'block';
+                    return;
+                }
+                continue;
+            } else {
+                if (color == '#000000') {
+                    feedback.classList.remove('success');
+                    feedback.classList.add('error');
+                    feedback.innerHTML = 'Please select a color for column ' + i;
+                    feedback.style.display = 'block';
+                    return;
+                }
+            }
+
+            settings.push({ column: i, user, color });
+        }
+
+        //fetch post to /save_settings
+        try {
+            //show loader
+            feedback.style.display = 'block';
+            feedback.classList.remove('error');
+            feedback.classList.remove('success');
+            feedback.innerHTML = '<div class="loader"></div>';
+            columnSetup.style.display = 'none';
+
+            const response = await fetch('/save_settings', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/x-www-form-urlencoded'
+                },
+                body: 'settings=' + encodeURIComponent(JSON.stringify(settings))
+            });
+            if (response.status == 200) {
+                feedback.classList.add('success');
+                feedback.innerHTML = '<p>Settings saved successfully</p><div class="loader-progress"></div>';
+                feedback.style.display = 'block';
+                setTimeout(() => {
+                    resetPage();
+                }, 6000);
+            } else {
+                throw new Error('An error occurred while saving the settings');
+            }
+        } catch (error) {
+            feedback.classList.add('error');
+            feedback.innerHTML = '<p>An error occurred while saving the settings. Please try again and consider to restart the application.</p><div class="loader-progress"></div>';
+            feedback.style.display = 'block';
+            setTimeout(() => {
+                resetPage();
+            }, 6000);
+        }
+    }
+
+    function resetPage() {
+        feedback.style.display = 'none';
+        feedback.classList.remove('error');
+        feedback.classList.remove('success');
+        columnSetup.style.display = 'block';
+		resetSection.style.display = 'block';
+    }
+
+	const resetButton = document.getElementById('resetSystem');
+	resetButton.addEventListener('click', (e) => {
+		resetSystem();
+	});
+
+	async function resetSystem() {
+		//hide reste section
+		resetSection.style.display = "none";
+		const response = await fetch('/reset', {
+			method: 'GET',
+			headers: {
+				'Content-Type': 'application/json',
+			}
+		});
+		if (response.status == 200) {
+			feedback.classList.add('success');
+			feedback.innerHTML = '<p>System reset successfully</p><div class="loader-progress"></div>';
+			feedback.style.display = 'block';
+			setTimeout(() => {
+				resetPage();
+			}, 6000);
+		} else {
+			throw new Error('An error occurred while resetting the system');
+		}
+	}
+
+    //const picker = document.getElementById('color-picker');
+    //picker.addEventListener('change', (e) => {
+    //    console.log("change");
+    //    console.log(e.target.value);
+    //}); 
+
+</script>
+<style>
+    #color-picker {
+        width: 100px;
+        height: 100px;
+        background-color: #fff;
+        border: none;
+        outline: none;
+    }
+</style>
+
+</html>
+
+<style>
+    :root {
+        --color-primary: rgb(39, 174, 96);
+        --color-secondary: rgb(39, 174, 96);
+        --color-light: #f8f9fa;
+        --color-medium: #adb5bd;
+        --color-dark: #212529;
+        --color-white: #fff;
+        --color-black: #000;
+        --fofa: "Poppins", "Montserrat", "Arial", sans-serif;
+        --box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+        --border-radius: 8px;
+    }
+
+    body {
+        margin: 0;
+        background-color: var(--color-light);
+        font-family: var(--fofa);
+        color: var(--color-dark);
+    }
+
+    * {
+        box-sizing: border-box;
+    }
+
+    /* HTML: <div class="loader"></div> */
+    .loader-progress {
+        width: 100%;
+        height: 2px;
+        margin-top: 12px;
+        background:
+            linear-gradient(var(--color-dark) 0 0) 0/0% no-repeat #ddd;
+        animation: l1 6s forwards linear;
+    }
+
+    @keyframes l1 {
+        100% {
+            background-size: 100%
+        }
+    }
+
+    /* HTML: <div class="loader"></div> */
+    .loader {
+        margin: 0 auto;
+        width: 50px;
+        aspect-ratio: 1;
+        border-radius: 50%;
+        border: 8px solid var(--color-primary);
+        animation:
+            l20-1 0.8s infinite linear alternate,
+            l20-2 1.6s infinite linear;
+    }
+
+    @keyframes l20-1 {
+        0% {
+            clip-path: polygon(50% 50%, 0 0, 50% 0%, 50% 0%, 50% 0%, 50% 0%, 50% 0%)
+        }
+
+        12.5% {
+            clip-path: polygon(50% 50%, 0 0, 50% 0%, 100% 0%, 100% 0%, 100% 0%, 100% 0%)
+        }
+
+        25% {
+            clip-path: polygon(50% 50%, 0 0, 50% 0%, 100% 0%, 100% 100%, 100% 100%, 100% 100%)
+        }
+
+        50% {
+            clip-path: polygon(50% 50%, 0 0, 50% 0%, 100% 0%, 100% 100%, 50% 100%, 0% 100%)
+        }
+
+        62.5% {
+            clip-path: polygon(50% 50%, 100% 0, 100% 0%, 100% 0%, 100% 100%, 50% 100%, 0% 100%)
+        }
+
+        75% {
+            clip-path: polygon(50% 50%, 100% 100%, 100% 100%, 100% 100%, 100% 100%, 50% 100%, 0% 100%)
+        }
+
+        100% {
+            clip-path: polygon(50% 50%, 50% 100%, 50% 100%, 50% 100%, 50% 100%, 50% 100%, 0% 100%)
+        }
+    }
+
+    @keyframes l20-2 {
+        0% {
+            transform: scaleY(1) rotate(0deg)
+        }
+
+        49.99% {
+            transform: scaleY(1) rotate(135deg)
+        }
+
+        50% {
+            transform: scaleY(-1) rotate(0deg)
+        }
+
+        100% {
+            transform: scaleY(-1) rotate(-135deg)
+        }
+    }
+
+    h1 {
+        margin: 0;
+        font-size: 32px;
+        color: var(--color-secondary);
+    }
+
+    p {
+        margin: 0;
+        color: var(--color-medium);
+    }
+
+    .title {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 12px;
+    }
+
+    .title svg {
+        height: 32px;
+        color: var(--color-primary);
+        border-radius: 100%;
+        box-shadow: var(--box-shadow);
+        padding: 2px;
+        border: 2px solid var(--color-secondary);
+    }
+
+    header {
+        border-bottom: 2px solid var(--color-secondary);
+    }
+
+
+
+    header,
+    .column-setup,
+    #feedback {
+        padding: 12px;
+        margin: 25px;
+        background-color: var(--color-white);
+        box-shadow: var(--box-shadow);
+        border-radius: var(--border-radius);
+    }
+
+    #feedback p {
+        color: var(--color-dark);
+    }
+
+    #feedback.error {
+        border: 1px solid #e63946;
+        color: #e63946
+    }
+
+    #feedback.success {
+        border: 1px solid #57cc99;
+        color: #57cc99;
+    }
+
+    .column-setup h2 {
+        margin: 0 0 4px 0;
+    }
+
+    .column-wrapper {
+        margin-bottom: 18px;
+    }
+
+    .setting-wrapper {
+        display: flex;
+        gap: 12px;
+    }
+
+    .setting-wrapper select {
+        width: 100%;
+        height: 42px;
+        background-color: var(--color-light);
+        border: none;
+        outline: none;
+        padding: 0 12px;
+        border-radius: var(--border-radius);
+        border-bottom: 1px solid var(--color-medium);
+    }
+
+    .setting-wrapper input[type="color"] {
+        min-width: 42px;
+        max-width: 42px;
+        min-height: 42px;
+        max-width: 42px;
+        background-color: #fff;
+        border: none;
+        outline: none;
+        padding: 0;
+    }
+
+    #save {
+        width: 100%;
+        background-color: var(--color-primary);
+        color: var(--color-light);
+        height: 52px;
+        border: none;
+        cursor: pointer;
+        font-size: 18px;
+        border-radius: var(--border-radius);
+        transition: all .3s ease-in;
+    }
+
+    @media(hover:hover) {
+        #save:hover {
+            background: var(--color-white);
+            border: 2px solid var(--color-primary);
+            color: var(--color-primary);
+        }
+    }
+
+	#resetSection {
+		margin: 80px 25px 0;
+		background-color: #fff;
+		border: 2px solid #ff0054;
+		color: #ff0054;
+		padding: 12px;
+	}
+	#resetSection button{
+		margin-top: 20px;
+		border: none;
+		background-color: #ff0054;
+		padding: 10px 18px;
+		color: #fff;
+	}
+
+</style>

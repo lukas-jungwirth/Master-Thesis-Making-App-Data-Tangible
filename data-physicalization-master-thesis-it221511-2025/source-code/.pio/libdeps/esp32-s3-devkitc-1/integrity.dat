@@ -1,0 +1,5 @@
+fastled/FastLED@^3.7.5
+me-no-dev/ESP Async WebServer@^1.2.3
+bblanchon/ArduinoJson@^7.1.0
+me-no-dev/AsyncTCP@^1.1.1
+adafruit/Adafruit HTU21DF Library@^1.1.2
